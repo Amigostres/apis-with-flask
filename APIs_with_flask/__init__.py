@@ -3,7 +3,7 @@ from flask import Flask
 def create_app():
     app = Flask(__name__)
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Jose@localhost:5432/Flask-SQLAlchemy'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:02132003@localhost:5432/APIs_with_flask'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
     
     from . import models
@@ -16,6 +16,4 @@ def create_app():
         return 'hello'
 
     return app
-
-
 
